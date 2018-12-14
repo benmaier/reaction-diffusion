@@ -139,7 +139,7 @@ ani = animation.FuncAnimation(fig, #matplotlib figure
                               updatefig, # function that takes care of the update
                               fargs=animation_arguments, # arguments to pass to this function
                               interval=1, # update every `interval` milliseconds
-                              blit=True, 
+                              blit=True, # optimize the drawing update 
                               )
 
 # show the animation
