@@ -3,7 +3,9 @@
 This repository contains some Python examples to obtain
 reaction-diffusion results and animations as the one shown below.
 
-For an explanation/tutorial, see the [Jupyter notebook]()
+For an explanation/tutorial, see the [Jupyter notebook](https://github.com/benmaier/reaction-diffusion/blob/master/gray_scott.ipynb)
+
+![gray-scott-animation](https://raw.githubusercontent.com/benmaier/reaction-diffusion/master/img/gray_scott.gif)
 
 ## References
 
