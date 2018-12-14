@@ -146,7 +146,7 @@ ani = animation.FuncAnimation(fig, #matplotlib figure
 Writer = animation.writers['ffmpeg']
 writer = Writer(fps=15, metadata=dict(artist='Me'), bitrate=1800)
 
-ani.save('gray_scott.mp4', writer=writer)
+ani.save('img/gray_scott.mp4', writer=writer)
 
 # show the animation
 pl.show()
