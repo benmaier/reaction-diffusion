@@ -122,7 +122,7 @@ f = 0.060
 k = 0.062
 
 # grid size
-N = 200
+N = 1000
 
 # intialize the figures
 A, B = get_initial_A_and_B(N)

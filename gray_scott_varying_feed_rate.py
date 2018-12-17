@@ -126,16 +126,16 @@ def updatefig(frame_id,updates_per_frame,*args):
 
 # =========== define model parameters ==========
 # grid size
-N = 400
+N = 1000
 L = get_laplacian(N)
 
 
 # update in time
-delta_t = 1.4
+delta_t = 1.1
 
 # Diffusion coefficients
-DA = 0.16
-DB = 0.08
+DA = 0.16*1.3
+DB = 0.08*1.3
 
 # define birth/death rates
 f = (np.ones((N,N)) * np.linspace(0.016,0.040,N)[None,:]).flatten()
@@ -160,17 +160,16 @@ updates_per_frame = 30
 # these are the arguments which have to passed to the update function
 animation_arguments = (updates_per_frame, A, B, DA, DB, f, k, delta_t, L)
 
-for step in range(15000):
+for step in range(1000):
     update(*animation_arguments[1:])
 
 saveani = True
 
 if saveani:
-    n_frames = frames=int(15000/updates_per_frame)
+    n_frames = frames=int(30000/updates_per_frame)
 else:
     n_frames = None
 
-n_frames = frames=int(15000/updates_per_frame)
 # start the animation
 ani = animation.FuncAnimation(fig, #matplotlib figure
                               updatefig, # function that takes care of the update
